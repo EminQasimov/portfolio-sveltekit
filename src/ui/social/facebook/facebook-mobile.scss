@@ -1,0 +1,366 @@
+$myimg: 'https://s.cdpn.io/profiles/user/2961445/80.jpg?1553082357';
+$avatar: 'https://i.pravatar.cc/200?img=';
+$facebook-blue: #1978f6;
+$gray: #ececf0;
+
+#facebook {
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden;
+	header {
+		display: flex;
+		align-items: center;
+		box-shadow: 0 2px 1px -1px rgb(223, 221, 221);
+		position: relative;
+		z-index: 9;
+
+		& > div {
+			height: 5em;
+			padding: 1em;
+		}
+		.logo-search {
+			flex: 1;
+			background: #fff;
+			display: flex;
+			align-items: center;
+			padding-right: 0;
+
+			.logo {
+				width: 3.4em;
+				height: 3.4em;
+				padding: 1em 0px;
+				overflow: hidden;
+				border-radius: 50%;
+				display: inline-block;
+				text-align: center;
+				background-image: linear-gradient(#82cff8, #056de4);
+				margin-right: 1em;
+				svg {
+					display: inline-block;
+					width: 2.6em;
+					height: 2.6em;
+					color: #fff;
+				}
+			}
+			.search-wrapper {
+				flex: 1;
+				position: relative;
+				height: 3.4em;
+
+				.search {
+					width: 100%;
+					display: inline-block;
+					height: 100%;
+					padding: 1em 2.3em;
+					border: none;
+					border-radius: 40px;
+					background: $gray;
+					color: #000;
+					font-size: 130%;
+					position: absolute;
+					&:focus {
+						outline: none;
+					}
+				}
+
+				span.search-icon {
+					content: ' ';
+					display: inline-block;
+					width: 2em;
+					height: 2em;
+					position: absolute;
+					z-index: 9;
+					top: 0.7em;
+					left: 0.8em;
+				}
+			}
+		}
+
+		.setting {
+			background: #fff;
+			text-align: right;
+			span {
+				width: 2.8em;
+				height: 2.8em;
+				background: #ddd;
+				border-radius: 50%;
+				display: inline-block;
+				padding-top: 0.4em;
+				text-align: center;
+				svg {
+					width: 2em;
+					height: 2em;
+					opacity: 0.5;
+				}
+			}
+		}
+	}
+
+	main {
+		display: flex;
+		height: 100%;
+		overflow: hidden;
+	} // .main
+} //#facebook
+
+.fb-middle {
+	width: 100%;
+	background: $gray;
+	box-shadow: 1px 0px 1px rgb(223, 221, 221), -1px 0px 1px rgb(223, 221, 221);
+	height: calc(100% - 9em);
+	@media screen and (max-width: 768px) {
+		height: calc(100% - 5em);
+	}
+	overflow: hidden;
+	overflow-y: scroll;
+	padding-top: 1em;
+
+	.fb-send {
+		display: flex;
+		margin: 2em;
+		text-align: center;
+		border-radius: 0.7em;
+		background: #fff;
+		height: 5em;
+		align-items: center;
+		padding: 1.2em;
+		box-shadow: 0 1px 1px rgb(216, 216, 216);
+		opacity: 0.86;
+
+		.post-profile {
+			width: 3.6em;
+			height: 3.6em;
+			background: url(/assets/emin.jpg) center / cover no-repeat;
+			border-radius: 50%;
+		}
+		.send-input {
+			flex: 1;
+			background: #f2f3f5;
+			height: 2.2em;
+			font-size: 1.4em;
+			line-height: 2.2em;
+			border-radius: 0.6em;
+			margin: 0 0.5em;
+			opacity: 0.6;
+		}
+		.send-button {
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			opacity: 0.2;
+		}
+	} //send a post
+
+	.fb-posts {
+		margin: 1em;
+		margin-bottom: 3.5em;
+		border-radius: 0.7em;
+	}
+} // fb middle
+
+//____story____________
+
+.story-wrapper {
+	margin: 1em;
+	overflow: hidden;
+	height: 18.5em;
+	opacity: 0.86;
+	h1 {
+		display: flex;
+		align-items: center;
+		font-weight: 100;
+		font-size: 1.5em;
+		opacity: 0.7;
+		&::after {
+			content: 'See All';
+			display: block;
+			font-size: 11px;
+			color: $facebook-blue;
+			margin-left: auto;
+		}
+	}
+} //stori wrapper
+
+ul.stories {
+	white-space: nowrap;
+	width: 100%;
+	overflow-x: scroll;
+}
+
+li.story {
+	box-shadow: 0 2px 3px -1px rgb(139, 139, 139), inset 0 0 0 100em rgba(0, 0, 0, 0.3);
+	border-radius: 0.8em;
+	display: inline-block;
+	list-style: none;
+	width: 10em;
+	height: 16em;
+	margin: 0.3em;
+	background: url(/assets/emin.jpg) center / cover no-repeat;
+	overflow: hidden;
+	position: relative;
+	font-family: Helvetica, sans-serif;
+
+	&::before {
+		content: ' ';
+		display: inline-block;
+		width: 2em;
+		height: 2em;
+		border-radius: 2em;
+		border: 2px solid rgb(255, 255, 255);
+		color: #fff;
+		font-weight: 100;
+		box-shadow: inset 0 0 0 2em rgba(20, 20, 20, 0.2);
+		margin: 0em;
+		text-align: center;
+		line-height: 2em;
+		font-size: 3em;
+		transform: scale(0.6);
+		background: url(/assets/facebook/70/1.jpg) center / cover no-repeat;
+	}
+
+	&:nth-child(2) {
+		background-image: url(/assets/facebook/1.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/1.jpg);
+		}
+	}
+
+	&:nth-child(3) {
+		background-image: url(/assets/facebook/2.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/2.jpg);
+		}
+	}
+
+	&:nth-child(4) {
+		background-image: url(/assets/facebook/3.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/3.jpg);
+		}
+	}
+
+	&:nth-child(5) {
+		background-image: url(/assets/facebook/4.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/4.jpg);
+		}
+	}
+
+	&:nth-child(6) {
+		background-image: url(/assets/facebook/5.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/5.jpg);
+		}
+	}
+
+	&:nth-child(7) {
+		background-image: url(/assets/facebook/6.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/6.jpg);
+		}
+	}
+
+	&:nth-child(8) {
+		background-image: url(/assets/facebook/7.jpg);
+		&::before {
+			background-image: url(/assets/facebook/70/7.jpg);
+		}
+	}
+
+	&:nth-child(1) {
+		background-image: url(/assets/emin.jpg);
+		&::before {
+			content: ' + ';
+			background-image: none;
+		}
+	}
+}
+// _______post_________
+.preloader {
+	height: 300px;
+	background-image: linear-gradient(
+		to left,
+		#ffffff 0%,
+		rgba(53, 53, 53, 0.1) 50%,
+		#ffffff 100%
+	) !important;
+	background-repeat: no-repeat !important;
+	background-size: 900px 100%;
+	animation: loading 2s ease-in-out infinite forwards;
+}
+
+@keyframes loading {
+	0% {
+		background-position: -800px 0;
+	}
+	100% {
+		background-position: 800px 0;
+	}
+}
+
+.facebook-post {
+	background: #fff;
+	width: 100%;
+	margin: 2em auto;
+	border-radius: 1em;
+	overflow: hidden;
+	box-shadow: 0 1px 1px rgb(216, 216, 216);
+
+	.post-head {
+		display: flex;
+		align-items: center;
+		height: 7.2em;
+		padding: 1.2em;
+		margin: 0 auto;
+		@media (max-width: 500px) {
+			font-size: 9px !important;
+		}
+		@media (max-width: 450px) {
+			font-size: 8px !important;
+		}
+		span {
+			display: inline-block;
+			background: url(.//assets/emin.jpg) center / cover no-repeat;
+			width: 4.4em;
+			height: 4.4em;
+			border-radius: 50%;
+			box-shadow: 0 0 0 2px #fff, 0 0 0 3px $facebook-blue;
+		}
+		.author {
+			flex: 1;
+			margin: 1em;
+			.name {
+				color: #4665a1;
+				font-size: 1.4em;
+				p {
+					display: inline;
+					text-indent: 8em;
+					color: rgba(0, 0, 0, 0.9);
+					font-weight: 100;
+				}
+				a {
+					color: #4665a1;
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			.time {
+				color: rgba(0, 0, 0, 0.9);
+				font-size: 1.2em;
+			}
+		}
+		.dots {
+			width: 2.5em;
+			height: 2.5em;
+			opacity: 0.8;
+		}
+	} //head
+
+	.post-body {
+		background: #fff;
+		margin: 0 auto;
+		width: 100%;
+		text-align: center;
+	}
+}
