@@ -27,9 +27,9 @@
 		<span />
 		<div class="author">
 			<div class="name">
-				<a href="https://facebook.com/emin.qasimovdia">Emin Qasimov</a>{' '}
+				<a href="https://facebook.com/emin.qasimovdia">Emin Qasimov</a>
 				<p>
-					shared a video to the group:{' '}
+					shared a video to the group:
 					<a href="https://www.facebook.com/groups/frontenddevelopersazerbaijan">
 						Frontend Developers - Azerbaijan
 					</a>
@@ -53,6 +53,3 @@
 		/>
 	</div>
 </div>
-
-<style lang="scss" src="./post.scss" global>
-</style>

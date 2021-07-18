@@ -75,24 +75,24 @@ main.main-wrapper {
 }
 
 .webp .show-bg {
-	background: #e91e63 url(./assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed;
+	background: #e91e63 url(/assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed;
 }
 .no-webp .show-bg {
-	background: #e91e63 url(./assets/bg.png) 0px 0px / auto 102vh no-repeat fixed;
+	background: #e91e63 url(/assets/bg.png) 0px 0px / auto 102vh no-repeat fixed;
 }
 
 .webp .bg {
-	background: url(./assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed;
+	background: url(/assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed;
 }
 .no-webp .bg {
-	background: url(./assets/bg.png) 0px 0px / auto 102vh no-repeat fixed;
+	background: url(/assets/bg.png) 0px 0px / auto 102vh no-repeat fixed;
 }
 .webp .intro {
-	background: url(./assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed,
+	background: url(/assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed,
 		linear-gradient(-225deg, #fb3c00 0%, #ff3d00 29%, #ff9800 67%, #fff800 100%);
 }
 .no-webp .intro {
-	background: url(./assets/bg.png) 0px 0px / auto 102vh no-repeat fixed,
+	background: url(/assets/bg.png) 0px 0px / auto 102vh no-repeat fixed,
 		linear-gradient(-225deg, #fb3c00 0%, #ff3d00 29%, #ff9800 67%, #fff800 100%);
 }
 

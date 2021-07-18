@@ -38,7 +38,7 @@
 			</FirefoxBrowserFrame>
 		</div>
 		<div class="left">
-			<!-- <Canvas /> -->
+			<Canvas />
 		</div>
 	</div>
 </section>

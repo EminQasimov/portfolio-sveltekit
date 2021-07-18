@@ -8,14 +8,14 @@
 		StarIcon
 	} from '../icons';
 
-	export let tabbar,
-		url,
-		customClass,
-		leftClickHandler = () => {},
-		rightClickHandler = () => {},
-		buttonEnter = () => {},
-		buttonLeave = () => {},
-		focusHandler = (e) => {};
+	export let tabbar;
+	export let url;
+	export let customClass;
+	export let leftClickHandler = () => {};
+	export let rightClickHandler = () => {};
+	export let buttonEnter = () => {};
+	export let buttonLeave = () => {};
+	export let focusHandler = (e) => {};
 </script>
 
 <div class="FirefoxBrowserFrame" class:customClass>
@@ -36,13 +36,13 @@
 
 	<div class="searchbar">
 		<div class="buttons" on:mouseenter={buttonEnter} on:mouseleave={buttonLeave}>
-			<span onClick={leftClickHandler} class="left-button">
+			<span on:click={leftClickHandler} class="left-button">
 				<ArrowLeftIcon />
 			</span>
-			<span onClick={rightClickHandler} class="right-button">
+			<span on:click={rightClickHandler} class="right-button">
 				<ArrowRightIcon />
 			</span>
-			<span style="display: ${tabbar ? 'none' : 'inline-block'} ">
+			<span style="display: {tabbar ? 'none' : 'inline-block'}">
 				<RefreshIcon />
 			</span>
 		</div>
@@ -64,7 +64,7 @@
 		</div>
 	</div>
 
-	<div class="content" style="height: ${tabbar ? '' : '100%'}">
+	<div class="content" style="height: {tabbar ? '' : '100%'}">
 		<slot />
 	</div>
 </div>
