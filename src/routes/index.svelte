@@ -1,9 +1,9 @@
 <script context="module">
 	// If hydrate and router are both false, SvelteKit will not add any JavaScript to the page at all.
 	// export const hydrate = false;
-	export const router = false;
+	// export const router = false;
 
-	// export const prerender = true;
+	export const prerender = true;
 </script>
 
 <script>
