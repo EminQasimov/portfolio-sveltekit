@@ -10,17 +10,14 @@
 	import Social from '../ui/social/social.svelte';
 	import Intro from '../ui/intro/intro.svelte';
 	import Blog from '../ui/blog/blog.svelte';
+	import Portfolio from '../ui/portfolio/portfolio.svelte';
 	import Skills from '../ui/skills/skills.svelte';
 	import Contact from '..//ui/contact/contact.svelte';
 
 	import { onMount } from 'svelte';
 
 	const getNarrowAndTall = () => {
-		if (window.innerWidth < 1024 || window.innerHeight > 1024) {
-			return true;
-		} else {
-			return false;
-		}
+		return window.innerWidth < 1024 || window.innerHeight > 1024;
 	};
 
 	let isNarrowAndTall = false;
@@ -39,6 +36,14 @@
 
 	<div class="sticky" style="z-index: {isNarrowAndTall ? 999 : 1}">
 		<Social />
+	</div>
+
+	<div class="sticky" style="z-index: 0; pointer-events: none">
+		<section class="stuck" />
+	</div>
+
+	<div class="sticky" style="z-index: {isNarrowAndTall ? 999 : 1}">
+		<Portfolio />
 	</div>
 
 	<div class="sticky" style="z-index: 0; pointer-events: none">

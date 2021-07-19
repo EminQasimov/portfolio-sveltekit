@@ -8,17 +8,26 @@
 	let fbVideo;
 	let isloading = true;
 	let windowWidth = 1200;
+	let checkingDuration = 0;
 
 	onMount(() => {
-		// windowWidth = window?.innerWidth;
+		windowWidth = window?.innerWidth;
 
-		let inter = setInterval(() => {
-			let elem = fbVideo.getAttribute('fb-xfbml-state');
-			if (elem === 'rendered') {
+		let timeout;
+
+		function checkFacebookPostsLoaded() {
+			let elem = fbVideo?.getAttribute('fb-xfbml-state');
+			// check it for 1 minute
+			if (elem === 'rendered' || checkingDuration > 1000 * 60) {
 				isloading = false;
-				clearInterval(inter);
+				clearTimeout(timeout);
+			} else {
+				checkingDuration += 100;
+				timeout = setTimeout(checkFacebookPostsLoaded, 100);
 			}
-		}, 3000);
+		}
+
+		checkFacebookPostsLoaded();
 	});
 </script>
 
@@ -30,9 +39,7 @@
 				<a href="https://facebook.com/emin.qasimovdia">Emin Qasimov</a>
 				<p>
 					shared a video to the group:
-					<a href="https://www.facebook.com/groups/frontenddevelopersazerbaijan">
-						Frontend Developers - Azerbaijan
-					</a>
+					<a href={video}> Frontend Developers - Azerbaijan </a>
 					.
 				</p>
 			</div>

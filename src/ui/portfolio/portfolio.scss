@@ -1,0 +1,105 @@
+.portfolio {
+  height: calc(100vh + 15em);
+  position: relative;
+  top: -15em;
+  .container {
+    position: relative;
+    height: 100%;
+    border-top: 1px solid transparent; //margin collapse
+  }
+  .content {
+    overflow: hidden;
+  }
+  h1 {
+    font-size: 5em;
+    font-weight: 700;
+    color: var(--white);
+    margin-top: -10px;
+    margin-bottom: 10px;
+    @media (max-width: 768px) {
+      font-size: 3.5em;
+      margin-top: 0px;
+    }
+  }
+  p {
+    font-size: 2.5em;
+    color: var(--white);
+    opacity: 0.8;
+    font-weight: 400;
+    margin-top: 10px;
+    @media (max-width: 768px) {
+      font-size: 1.5em;
+    }
+  }
+  .buttons:hover span,
+  .buttons:hover svg {
+    animation: none;
+  }
+  .right-button {
+    animation-direction: alternate-reverse !important;
+  }
+  .left-button,
+  .right-button {
+    transition: all 0.3s ease;
+    transform: scale(1.01);
+    width: 50% !important;
+    animation: pulse 0.5s ease infinite alternate;
+    animation-play-state: running;
+    svg {
+      animation: pulse-color 0.5s ease infinite alternate-reverse;
+      animation-play-state: running;
+    }
+    &:hover {
+      transform: scale(1.1);
+      background: #38a5fd;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      svg {
+        color: var(--white) !important;
+        opacity: 1 !important;
+        animation: none;
+      }
+    }
+
+    &:active {
+      transform: scale(0.98);
+      background: #38a5fd;
+      animation: none;
+      box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
+      cursor: pointer;
+      svg {
+        color: var(--white) !important;
+        opacity: 1 !important;
+        animation: none;
+      }
+    }
+  }
+
+  .slick-slider,
+  .slick-list,
+  .slick-track,
+  .slick-slide,
+  .slick-slide > div {
+    height: 100% !important;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(0.98);
+    background: #38a5fd;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(1.1);
+    background: #38a5fd;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@keyframes pulse-color {
+  to {
+    opacity: 1;
+    color: var(--white);
+  }
+}

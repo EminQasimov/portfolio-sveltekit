@@ -10,7 +10,8 @@
 
 	export let tabbar;
 	export let url;
-	export let customClass;
+	export let style = '';
+	export let customClass = '';
 	export let leftClickHandler = () => {};
 	export let rightClickHandler = () => {};
 	export let buttonEnter = () => {};
@@ -18,7 +19,7 @@
 	export let focusHandler = (e) => {};
 </script>
 
-<div class="FirefoxBrowserFrame" class:customClass>
+<div class="FirefoxBrowserFrame" class:customClass {style}>
 	{#if tabbar}
 		<div class="tabbar">
 			<div class="tab-buttons">

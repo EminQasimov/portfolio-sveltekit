@@ -99,11 +99,16 @@ $firefox-blue: #008afb;
 	}
 
 	span.close {
-		color: darken($firefox-blue, 30%);
+		color: darken($firefox-blue, 20%);
 		display: inline-block;
 		margin: 2em 0 0 -2em;
 		opacity: 0.4;
 		width: 1.6em;
+
+		svg{
+			font-size: 18px;
+			vertical-align: middle;
+		}
 	}
 
 	.plus {

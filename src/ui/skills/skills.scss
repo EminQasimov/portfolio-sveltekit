@@ -1,6 +1,8 @@
 .skills {
 	height: 100vh;
 	overflow: hidden;
+	box-shadow: 0 -2px 32px rgb(6 34 79 / 22%);
+
 	.container {
 		border-top: 1px solid transparent;
 		padding-top: 2em;
@@ -8,7 +10,7 @@
 	h1 {
 		font-size: 5em;
 		font-weight: 700;
-		color: var(--white);
+		color: #0f172a;
 		margin-top: -10px;
 		margin-bottom: 10px;
 		@media (max-width: 768px) {
@@ -18,7 +20,7 @@
 	}
 	p {
 		font-size: 2.5em;
-		color: var(--white);
+		color: #0f172a;
 		opacity: 0.8;
 		font-weight: 400;
 		margin-top: 10px;
@@ -36,11 +38,11 @@
 }
 
 .skill {
-	margin: 8px;
-	background: rgba(255, 255, 255, 0.02);
-	border-radius: 4px;
+	margin: 6px;
+	background: rgba(0, 0, 0, 0.02);
+	border-radius: 8px;
 	padding: 1.6em;
-	width: 140px;
+	width: 120px;
 	min-height: 100px;
 	display: flex;
 	flex-direction: column;
@@ -48,7 +50,7 @@
 	justify-content: space-between;
 	transition: box-shadow 0.2s;
 	&:hover {
-		box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
+		box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.05);
 	}
 }
 
@@ -64,9 +66,9 @@
 }
 
 .skill-title {
-	color: #f5d0fe;
-	font-size: 1.5em;
+	color: #0f172a;
+	font-size: 1.4em;
 	text-transform: capitalize;
-	font-weight: 400;
+	font-weight: 600;
 	padding: 0.4em 0;
 }

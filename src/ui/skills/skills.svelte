@@ -77,7 +77,7 @@
 
 		{
 			icon: Ant,
-			title: 'Ant design'
+			title: 'AntDesign'
 		},
 		{
 			icon: Material,
