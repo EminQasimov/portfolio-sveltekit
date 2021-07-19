@@ -10,12 +10,12 @@
 	</div>
 	<div class="card__title">
 		<a href={'https://medium.com/@eminqasimov' + link}>
-			<h3>{title}</h3>
+			<h5>{title}</h5>
 		</a>
 		<div class="paragraf">
 			<div class="author-image" />
 			<div class="author-data">
-				<h4>Emin Qasimov</h4>
+				<p>Emin Qasimov</p>
 				<span>{date + ', 2019'}</span>
 			</div>
 		</div>

@@ -66,6 +66,7 @@ $gray: #ececf0;
 			flex: 1;
 			position: relative;
 			height: 3.4em;
+			display: block;
 
 			.search {
 				width: 100%;
@@ -78,6 +79,7 @@ $gray: #ececf0;
 				color: #000;
 				font-size: 130%;
 				position: absolute;
+
 				&:focus {
 					outline: none;
 				}
@@ -152,16 +154,16 @@ $gray: #ececf0;
 		line-height: 2.2em;
 		border-radius: 0.6em;
 		margin: 0 0.5em;
-		opacity: 0.6;
+		opacity: 0.8;
 	}
 	.send-button {
 		width: 30px;
 		height: 30px;
 		border-radius: 50%;
-		opacity: 0.2;
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		opacity: 0.8;
 
 		svg {
 			font-size: 32px;
@@ -391,6 +393,6 @@ li.story {
 	transform: translate(-50%, -50%);
 
 	p {
-		color: var(--facebook-blue);
+		color: var(--black);
 	}
 }

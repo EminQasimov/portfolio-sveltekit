@@ -11,12 +11,12 @@
 			<span class="logo">
 				<FacebookIcon />
 			</span>
-			<div class="search-wrapper">
+			<label class="search-wrapper">
 				<span class="search-icon">
 					<SearchIcon />
 				</span>
 				<input type="text" placeholder="Search" class="search" />
-			</div>
+			</label>
 		</div>
 		<div class="setting">
 			<span>
