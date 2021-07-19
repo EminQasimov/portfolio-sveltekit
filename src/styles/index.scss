@@ -29,6 +29,9 @@ body {
 	font-weight: 400;
 	box-sizing: border-box;
 	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -46,11 +49,7 @@ button {
 }
 
 #svelte {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
+	width: 100%;
 }
 
 main.main-wrapper {
@@ -120,4 +119,9 @@ main.main-wrapper {
 .contact {
 	background-color: #3b82f6 !important;
 	z-index: 11;
+}
+
+.holder {
+	z-index: 0 !important;
+	pointer-events: none !important;
 }

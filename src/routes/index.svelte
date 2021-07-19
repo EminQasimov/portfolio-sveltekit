@@ -38,7 +38,7 @@
 		<Social />
 	</div>
 
-	<div class="sticky" style="z-index: 0; pointer-events: none">
+	<div class="sticky holder">
 		<section class="stuck" />
 	</div>
 
@@ -46,7 +46,7 @@
 		<Portfolio />
 	</div>
 
-	<div class="sticky" style="z-index: 0; pointer-events: none">
+	<div class="sticky holder">
 		<section class="stuck" />
 	</div>
 
@@ -54,7 +54,7 @@
 		<Blog />
 	</div>
 
-	<div class="sticky" style="z-index: 0; pointer-events: none">
+	<div class="sticky holder">
 		<section class="stuck" />
 	</div>
 
@@ -62,7 +62,7 @@
 		<Skills />
 	</div>
 
-	<div class="sticky" style="z-index: 0; pointer-events: none">
+	<div class="sticky holder">
 		<section class="stuck" />
 	</div>
 
