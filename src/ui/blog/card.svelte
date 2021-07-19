@@ -10,7 +10,7 @@
 	</div>
 	<div class="card__title">
 		<a href={'https://medium.com/@eminqasimov' + link}>
-			<h5>{title}</h5>
+			<p class="author-name">{title}</p>
 		</a>
 		<div class="paragraf">
 			<div class="author-image" />

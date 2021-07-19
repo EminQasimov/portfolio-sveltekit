@@ -4,10 +4,11 @@
 	export let title = '';
 
 	let loading = true;
+	let error = false;
 </script>
 
 <div class="frame" transition:fade>
-	{#if loading}
+	{#if loading && !error}
 		<div class="spinner" />
 	{/if}
 
@@ -17,7 +18,13 @@
 		frameBorder="0"
 		{title}
 		style="display: {loading ? 'none' : 'inline-block'}"
-		on:load={() => (loading = false)}
+		on:load={() => {
+			loading = false;
+		}}
+		on:error={(e) => {
+			console.log('errirro', e);
+			error = true;
+		}}
 	/>
 </div>
 
