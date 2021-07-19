@@ -69,7 +69,7 @@
 		font-weight: 700;
 	}
 
-	h3 {
+	h2 {
 		font-size: 2.5em;
 		opacity: 0.7;
 		font-weight: 400;
@@ -187,29 +187,29 @@ button {
 
 .dance {
 	.social-buttons {
-		&:hover a {
+		&:hover li {
 			animation-play-state: paused;
 		}
 
-		a {
+		li {
 			animation: dance 0.8s ease-in-out 1 alternate;
 		}
 	}
 
 	@for $i from 1 through 5 {
-		.social-buttons a:nth-of-type(#{$i}) {
+		.social-buttons li:nth-of-type(#{$i}) {
 			animation-delay: #{math.div($i, 10)}s;
 		}
 	}
 }
 
 .social-buttons {
-	a {
+	li {
 		display: inline-block;
 		transform: translateY(10px);
 		transition: all 0.3s linear;
 	}
-	li {
+	a {
 		display: inline-block;
 		font-size: 2em;
 		width: 2.6em;

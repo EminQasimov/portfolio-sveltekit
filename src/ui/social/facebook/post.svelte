@@ -18,8 +18,8 @@
 
 		function checkFacebookPostsLoaded() {
 			let elem = fbVideo?.getAttribute('fb-xfbml-state');
-			// check it for 1 minute
-			if (elem === 'rendered' || checkingDuration > 1000 * 60) {
+			// check it for 2 minutes
+			if (elem === 'rendered' || checkingDuration > 1000 * 120) {
 				isloading = false;
 				error = true;
 				clearTimeout(timeout);

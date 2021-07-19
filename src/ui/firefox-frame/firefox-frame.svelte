@@ -47,7 +47,7 @@
 				<RefreshIcon />
 			</span>
 		</div>
-		<div class="searchinput">
+		<label class="searchinput">
 			<input
 				spellCheck="false"
 				type="text"
@@ -59,7 +59,7 @@
 			<span>
 				<StarIcon />
 			</span>
-		</div>
+		</label>
 		<div class="menuicon">
 			<MenuIcon />
 		</div>

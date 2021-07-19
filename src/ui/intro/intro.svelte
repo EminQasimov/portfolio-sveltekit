@@ -33,18 +33,20 @@
 	<div class="container">
 		<aside class="left">
 			<div>
-				<ul class="menu-list">
-					{#each menus as { text, href }}
-						<li>
-							<a {href}>{text}</a>
-						</li>
-					{/each}
-				</ul>
+				<nav class="menu-list">
+					<ul>
+						{#each menus as { text, href }}
+							<li>
+								<a {href}>{text}</a>
+							</li>
+						{/each}
+					</ul>
+				</nav>
 			</div>
 
 			<div>
 				<h1>Emin Qasımov</h1>
-				<h3>Frontend Developer</h3>
+				<h2>Frontend Developer</h2>
 			</div>
 
 			<div>
@@ -68,11 +70,11 @@
 			<div>
 				<ul class="social-buttons">
 					{#each accounts as { href, title, icon }}
-						<a {href} {title}>
-							<li>
+						<li>
+							<a {href} {title}>
 								<svelte:component this={icon} />
-							</li>
-						</a>
+							</a>
+						</li>
 					{/each}
 				</ul>
 			</div>

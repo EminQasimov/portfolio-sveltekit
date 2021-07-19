@@ -39,11 +39,11 @@
 
 					<ul class="social-buttons">
 						{#each accounts as { href, title, icon }}
-							<a {href} {title}>
-								<li>
+							<li>
+								<a {href} {title}>
 									<svelte:component this={icon} />
-								</li>
-							</a>
+								</a>
+							</li>
 						{/each}
 					</ul>
 				</div>
