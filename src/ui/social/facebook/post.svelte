@@ -7,6 +7,7 @@
 
 	let fbVideo;
 	let isloading = true;
+	let error = false;
 	let windowWidth = 1200;
 	let checkingDuration = 0;
 
@@ -20,6 +21,7 @@
 			// check it for 1 minute
 			if (elem === 'rendered' || checkingDuration > 1000 * 60) {
 				isloading = false;
+				error = true;
 				clearTimeout(timeout);
 			} else {
 				checkingDuration += 100;
@@ -33,14 +35,13 @@
 
 <div class="facebook-post">
 	<div class="post-head">
-		<span />
+		<!-- <span /> repeated avatar -->
 		<div class="author">
 			<div class="name">
 				<a href="https://facebook.com/emin.qasimovdia">Emin Qasimov</a>
 				<p>
 					shared a video to the group:
 					<a href={video}> Frontend Developers - Azerbaijan </a>
-					.
 				</p>
 			</div>
 			<div class="time">{postDate}</div>
@@ -50,6 +51,17 @@
 		</div>
 	</div>
 	<div class={'post-body' + (isloading ? ' preloader' : '')}>
+		{#if error}
+			<div class="error-video-link">
+				<a href={video}>
+					<p>View on Facebook.com</p>
+					<p>
+						{video}
+					</p>
+				</a>
+			</div>
+		{/if}
+
 		<div
 			class="fb-video"
 			bind:this={fbVideo}

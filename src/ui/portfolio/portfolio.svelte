@@ -48,7 +48,7 @@
 			title: 'Pie Image Carousel'
 		},
 		{
-			url: 'https://player.vimeo.com/video/343181095?loop=1',
+			url: 'https://eminqasimov.github.io/movies-roller/',
 			title: 'Rolling Movies Carousel'
 		},
 		{

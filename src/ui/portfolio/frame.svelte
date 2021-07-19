@@ -1,11 +1,12 @@
 <script>
+	import { fade } from 'svelte/transition';
 	export let url = '';
 	export let title = '';
 
 	let loading = true;
 </script>
 
-<div class="frame">
+<div class="frame" transition:fade>
 	{#if loading}
 		<div class="spinner" />
 	{/if}

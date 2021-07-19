@@ -321,8 +321,9 @@ li.story {
 		display: flex;
 		align-items: center;
 		height: 7.2em;
-		padding: 1.2em;
+		padding: 16px;
 		margin: 0 auto;
+
 		@media (max-width: 500px) {
 			font-size: 9px !important;
 		}
@@ -362,7 +363,6 @@ li.story {
 			}
 		}
 		.dots {
-			width: 2em;
 			height: 2em;
 			color: #999;
 			font-size: 26px;
@@ -377,5 +377,20 @@ li.story {
 		margin: 0 auto;
 		width: 100%;
 		text-align: center;
+		min-height: 400px;
+		position: relative;
+	}
+}
+
+.error-video-link {
+	font-size: 14px;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	p {
+		color: var(--facebook-blue);
 	}
 }

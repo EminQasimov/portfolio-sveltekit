@@ -71,5 +71,8 @@
 	</div>
 </main>
 
-<style lang="scss" src="../global.scss" global>
+<style lang="scss" global>
+	@import '../styles/index.scss';
+	@import '../styles/media-queries.scss';
+	@import '../styles/spinner.scss';
 </style>

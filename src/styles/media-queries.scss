@@ -1,127 +1,3 @@
-:root {
-	--black: #534856;
-	--yellow: #ffda32;
-	--blue: #3b5998;
-	--white: #fff;
-	--close: #fe5f5d;
-	--min: #fdc137;
-	--max: #24cc3e;
-	--firefox-blue: #008afb;
-	--facebook-blue: #1978f6;
-	--gray: #ececf0;
-}
-
-*,
-*::after,
-*::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: inherit;
-}
-
-html {
-	scroll-behavior: smooth;
-}
-
-body {
-	font-size: 65.2%;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 400;
-	box-sizing: border-box;
-	position: relative;
-}
-
-a {
-	text-decoration: none;
-	color: var(--black);
-}
-
-li {
-	list-style: none;
-}
-
-button {
-	user-select: none;
-	-webkit-touch-callout: none;
-}
-
-#svelte {
-	width: 100vw;
-	height: 100vh;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
-}
-
-main.main-wrapper {
-	margin: 0 auto;
-	width: 100%;
-	max-width: 1920px;
-}
-
-.container {
-	margin-left: auto;
-	margin-right: auto;
-	min-height: 100vh;
-	width: 100%;
-	padding: 0 2em;
-}
-
-.sticky {
-	top: 0;
-	z-index: 1;
-	position: -webkit-sticky;
-	position: sticky;
-}
-
-.webp .show-bg {
-	background: #e91e63 url(/assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed;
-}
-.no-webp .show-bg {
-	background: #e91e63 url(/assets/bg.png) 0px 0px / auto 102vh no-repeat fixed;
-}
-
-.webp .bg {
-	background: url(/assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed;
-}
-.no-webp .bg {
-	background: url(/assets/bg.png) 0px 0px / auto 102vh no-repeat fixed;
-}
-.webp .intro {
-	background: url(/assets/halfface.webp) 0px 0px / auto 102vh no-repeat fixed,
-		linear-gradient(-225deg, #fb3c00 0%, #ff3d00 29%, #ff9800 67%, #fff800 100%);
-}
-.no-webp .intro {
-	background: url(/assets/bg.png) 0px 0px / auto 102vh no-repeat fixed,
-		linear-gradient(-225deg, #fb3c00 0%, #ff3d00 29%, #ff9800 67%, #fff800 100%);
-}
-
-.stuck {
-	height: 70vh;
-	pointer-events: none;
-}
-.social {
-	background-color: #542883 !important; //#3b5998 facebook color
-	z-index: 2;
-}
-
-.blog {
-	background-color: #059669; //medium.com color
-	z-index: 3;
-}
-.portfolio {
-	background-color: gold;
-	z-index: 9;
-}
-.skills {
-	background-color: #fff;
-	z-index: 10;
-}
-.contact {
-	background-color: #3B82F6 !important;
-	z-index: 11;
-}
-
 @media screen and (min-height: 1025px) {
 	body {
 		background: #fff !important;
@@ -155,7 +31,7 @@ main.main-wrapper {
 		background-position: 0 0;
 	}
 	.intro {
-		background: url(/assets/bg.png) 0px 0px / auto 102% no-repeat,
+		background: url(/assets/halfface.webp) 0px 0px / auto 102% no-repeat,
 			linear-gradient(-225deg, #fb3c00 0%, #ff3d00 29%, #ff9800 67%, #fff800 100%) !important;
 	}
 	.portfolio {
@@ -189,12 +65,9 @@ main.main-wrapper {
 	}
 	.skills {
 		height: auto;
-		.skill {
-			width: 100%;
-		}
 	}
 	.intro {
-		background: url(/assets/bg.png) 0px 0px / auto 102% no-repeat,
+		background: url(/assets/halfface.webp) 0px 0px / auto 102% no-repeat,
 			linear-gradient(-225deg, #fb3c00 0%, #ff3d00 29%, #ff9800 67%, #fff800 100%) !important;
 	}
 	.stuck {
