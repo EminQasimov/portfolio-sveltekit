@@ -26,7 +26,7 @@ export default [
 	},
 	{
 		title: 'Follow me on Facebook',
-		href: 'https://facebook.com/emin.qasimovdia',
+		href: 'https://facebook.com/eminqasimovdev',
 		icon: FacebookIcon
 	},
 	{
